@@ -20,3 +20,6 @@ Once we have completed iterating over the array, we swap the values at the `pivo
 
 Our `quicksort` function then subdivides the array around the pivot index (getting the list of items smaller than the pivot and the list of items greater than the pivot) and recursively sorting them in the same fashion, until there are no more elements to sort. 
 
+## A Blog
+I wrote a longer post about visualizing QuickSort and [you can find it here](https://medium.com/@fablednet/quicksort-rainbows-to-rothko-657eb8d73919)
+
