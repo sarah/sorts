@@ -26,18 +26,18 @@ def partition(A, start, last):
     :last Int
     """
     pivot = last
-    fencePost = start
+    divider = start
 
     for i in range(start, last):
         if(A[i] <= A[pivot]):
-            # swap, move the smaller value to the left of the 'fencePost' and move the fencePost
-            A[i], A[fencePost] = A[fencePost], A[i]
-            fencePost += 1
+            # swap, move the smaller value to the left of the 'divider' and move the divider
+            A[i], A[divider] = A[divider], A[i]
+            divider += 1
 
-    # put the value of the pivot in the fencePost position, completing the partition.
-    A[fencePost], A[pivot] = A[pivot], A[fencePost]
+    # put the value of the pivot in the divider position, completing the partition.
+    A[divider], A[pivot] = A[pivot], A[divider]
 
-    return fencePost
+    return divider
 
 
 class QuickSortTest(unittest.TestCase):
