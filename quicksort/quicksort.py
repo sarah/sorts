@@ -36,6 +36,7 @@ def partition(A, start, last):
 
     # put the value of the pivot in the fencePost position, completing the partition.
     A[fencePost], A[pivot] = A[pivot], A[fencePost]
+
     return fencePost
 
 
@@ -55,4 +56,3 @@ class QuickSortTest(unittest.TestCase):
 
 if __name__== "__main__":
     unittest.main()
-
